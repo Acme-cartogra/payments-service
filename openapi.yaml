@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "payments-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8107"
+paths:
+  "/payments":
+    get:
+      summary: "List payments"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create payment"
+      responses:
+        "200":
+          description: OK
+  "/payments/{id}":
+    get:
+      summary: "Get payment by ID"
+      responses:
+        "200":
+          description: OK
